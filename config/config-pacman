@@ -1,5 +1,5 @@
 cd $PREFIX
-curl -O https://thercn.github.io/mt-repo/config/pacman-6.0.1.tar.gz
+curl -O https://thercn.github.io/config/pacman-6.0.1.tar.gz
 tar xf pacman-6.0.1.tar.gz
 rm pacman-6.0.1.tar.gz
 echo Done!
