@@ -31,7 +31,8 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: echo "#user http;                                                                             worker_processes  1;                                                                    
+        run: cat >/etc/nginx/nginx.conf<< EOF
+#user http;                                                                             worker_processes  1;                                                                    
 #error_log  logs/error.log;
 #error_log  logs/error.log  notice;                                                     #error_log  logs/error.log  info;
 
@@ -139,7 +140,8 @@ http {
     #        root   html;
     #        index  index.html index.htm;
     #    }
-    #}        ">/etc/nginx/nginx.conf  
+    #}
+EOF
           nginx -c /etc/nginx/nginx.conf
 	find /root
 	nginx -s reload
