@@ -1,0 +1,355 @@
+execve("/bin/nginx", ["nginx", "-s", "reload"], 0x7fc74ee9e0 /* 9 vars */) = 0
+brk(NULL)                               = 0x30001b5000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=62335, ...}) = 0
+mmap(NULL, 62335, PROT_READ, MAP_PRIVATE, 3, 0) = 0x743f249000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340\20\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=14288, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x743f247000
+mmap(NULL, 77920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743f233000
+mprotect(0x743f236000, 61440, PROT_NONE) = 0
+mmap(0x743f245000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x743f245000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\260j\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=166232, ...}) = 0
+mmap(NULL, 192872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743f203000
+mprotect(0x743f21e000, 61440, PROT_NONE) = 0
+mmap(0x743f22d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x743f22d000
+mmap(0x743f22f000, 12648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x743f22f000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libcrypt.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0000\25\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=178216, ...}) = 0
+mmap(NULL, 274920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743f1bf000
+mprotect(0x743f1ea000, 61440, PROT_NONE) = 0
+mmap(0x743f1f9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a000) = 0x743f1f9000
+mmap(0x743f1fb000, 29160, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x743f1fb000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libpcre.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\240\27\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=419720, ...}) = 0
+mmap(NULL, 483488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743f148000
+mprotect(0x743f1ae000, 61440, PROT_NONE) = 0
+mmap(0x743f1bd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x65000) = 0x743f1bd000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libssl.so.1.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0`\372\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=622312, ...}) = 0
+mmap(NULL, 686336, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743f0a0000
+mprotect(0x743f12a000, 65536, PROT_NONE) = 0
+mmap(0x743f13a000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x743f13a000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libcrypto.so.1.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0`\10\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2911984, ...}) = 0
+mmap(NULL, 2993304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743edc5000
+mprotect(0x743f05c000, 65536, PROT_NONE) = 0
+mmap(0x743f06c000, 196608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x297000) = 0x743f06c000
+mmap(0x743f09c000, 15512, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x743f09c000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\260\"\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=92048, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x743edc3000
+mmap(NULL, 155664, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743ed9c000
+mprotect(0x743edb2000, 61440, PROT_NONE) = 0
+mmap(0x743edc1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x743edc1000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libGeoIP.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0pk\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=276560, ...}) = 0
+mmap(NULL, 340312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743ed48000
+mprotect(0x743ed8a000, 61440, PROT_NONE) = 0
+mmap(0x743ed99000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x41000) = 0x743ed99000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\200F\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1827624, ...}) = 0
+mmap(NULL, 1522096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743ebd4000
+mprotect(0x743ed2f000, 65536, PROT_NONE) = 0
+mmap(0x743ed3f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15b000) = 0x743ed3f000
+mmap(0x743ed45000, 10672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x743ed45000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x743ebd2000
+mprotect(0x743ed3f000, 12288, PROT_READ) = 0
+mprotect(0x743ed99000, 4096, PROT_READ) = 0
+mprotect(0x743edc1000, 4096, PROT_READ) = 0
+mprotect(0x743f245000, 4096, PROT_READ) = 0
+mprotect(0x743f22d000, 4096, PROT_READ) = 0
+mprotect(0x743f06c000, 188416, PROT_READ) = 0
+mprotect(0x743f13a000, 40960, PROT_READ) = 0
+mprotect(0x743f1bd000, 4096, PROT_READ) = 0
+mprotect(0x743f1f9000, 4096, PROT_READ) = 0
+mprotect(0x3000174000, 16384, PROT_READ) = 0
+mprotect(0x3f00032000, 4096, PROT_READ) = 0
+munmap(0x743f249000, 62335)             = 0
+set_tid_address(0x743ebd24f0)           = 13225
+set_robust_list(0x743ebd2500, 24)       = -1 ENOSYS (函数未实现)
+rt_sigaction(SIGRTMIN, {sa_handler=0x743f209544, sa_mask=[], sa_flags=SA_SIGINFO}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x743f209600, sa_mask=[], sa_flags=SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+rt_sigprocmask(SIG_SETMASK, ~[ILL TRAP BUS FPE SEGV RTMIN RT_1], [], 8) = 0
+rt_sigaction(SIGILL, {sa_handler=0x743ee4f5d0, sa_mask=~[ILL TRAP BUS FPE SEGV RTMIN RT_1], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1], 8) = 0
+rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+brk(NULL)                               = 0x30001b5000
+brk(0x30001d6000)                       = 0x30001d6000
+openat(AT_FDCWD, "/usr/share/zoneinfo/GMT-8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录)
+getpid()                                = 13225
+getppid()                               = 13219
+futex(0x743f09e568, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09e56c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09e570, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09e654, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09e578, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09e57c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09e58c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09b9e8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09e438, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09c3d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09c2c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09e574, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f09e590, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/etc/ssl/openssl.cnf", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10909, ...}) = 0
+read(3, "#\n# OpenSSL example configuratio"..., 4096) = 4096
+read(3, "# WARNING: ancient versions of N"..., 4096) = 4096
+brk(0x30001f7000)                       = 0x30001f7000
+read(3, "es of the usage of nsCertType. I"..., 4096) = 2717
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+futex(0x743f09e580, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x743f1478d8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+sysinfo({uptime=350523, loads=[582976, 611392, 620096], totalram=3736985600, freeram=207646720, sharedram=10473472, bufferram=38871040, totalswap=2147479552, freeswap=260837376, procs=4433, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+futex(0x743f1478f4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+uname({sysname="Linux", nodename="localhost", ...}) = 0
+openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/proc/stat", O_RDONLY|O_CLOEXEC) = -1 EACCES (权限不够)
+openat(AT_FDCWD, "/proc/cpuinfo", O_RDONLY|O_CLOEXEC) = 3
+read(3, "processor\t: 0\nBogoMIPS\t: 38.40\nF"..., 8192) = 1490
+close(3)                                = 0
+prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=32*1024, rlim_max=32*1024}) = 0
+uname({sysname="Linux", nodename="localhost", ...}) = 0
+openat(AT_FDCWD, "/etc/nginx/nginx.conf", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2920, ...}) = 0
+pread64(3, "\n#user http;\nworker_processes  1"..., 2920, 0) = 2920
+epoll_create1(0)                        = 4
+close(4)                                = 0
+openat(AT_FDCWD, "/etc/nginx/mime.types", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=36345, ...}) = 0
+brk(0x300021b000)                       = 0x300021b000
+pread64(4, "types {\napplication/A2L\t\t\t\t\ta2l;"..., 4096, 0) = 4096
+pread64(4, "\trusd;\napplication/reginfo+xml\t\t"..., 4095, 4096) = 4095
+pread64(4, "application/vnd.blueice.multipas"..., 4095, 8191) = 4095
+pread64(4, "su.oasysprs\t\tbh2;\napplication/vn"..., 4075, 12286) = 4075
+pread64(4, "us.MBK\t\t\tmbk;\napplication/vnd.Mo"..., 4076, 16361) = 4076
+pread64(4, "ication/vnd.openxmlformats-offic"..., 4092, 20437) = 4092
+pread64(4, "ication/vnd.veryant.thin\t\t\tistc "..., 4092, 24529) = 4092
+pread64(4, "age/ktx\t\t\t\t\tktx;\nimage/ktx2     "..., 4094, 28621) = 4094
+brk(0x3000246000)                       = 0x3000246000
+pread64(4, "/vnd.fvt\t\t\t\t\tfvt;\nvideo/vnd.mpeg"..., 3630, 32715) = 3630
+close(4)                                = 0
+gettid()                                = 13225
+write(2, "2022/02/07 10:31:39 [warn] 13225"..., 1922022/02/07 10:31:39 [warn] 13225#13225: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+) = 192
+close(3)                                = 0
+geteuid()                               = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (没有那个文件或目录)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (没有那个文件或目录)
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=359, ...}) = 0
+read(3, "# Name Service Switch configurat"..., 4096) = 359
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=62335, ...}) = 0
+mmap(NULL, 62335, PROT_READ, MAP_PRIVATE, 3, 0) = 0x743f249000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0 (\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=47056, ...}) = 0
+mmap(NULL, 136144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743ebb0000
+mprotect(0x743ebbb000, 61440, PROT_NONE) = 0
+mmap(0x743ebca000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x743ebca000
+mmap(0x743ebcc000, 21456, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x743ebcc000
+close(3)                                = 0
+mprotect(0x743ebca000, 4096, PROT_READ) = 0
+munmap(0x743f249000, 62335)             = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1224, ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "root:x:0:0::/root:/bin/bash\nbin:"..., 4096) = 1224
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (没有那个文件或目录)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (没有那个文件或目录)
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=774, ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "root:x:0:root\nsys:x:3:bin\nmem:x:"..., 4096) = 774
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=62335, ...}) = 0
+mmap(NULL, 62335, PROT_READ, MAP_PRIVATE, 3, 0) = 0x743f249000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libnss_systemd.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0p\231\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=432896, ...}) = 0
+mmap(NULL, 498752, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743eb36000
+mprotect(0x743eb9b000, 61440, PROT_NONE) = 0
+mmap(0x743ebaa000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x64000) = 0x743ebaa000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\200#\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=31024, ...}) = 0
+mmap(NULL, 94568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743eb1e000
+mprotect(0x743eb25000, 61440, PROT_NONE) = 0
+mmap(0x743eb34000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x743eb34000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\20\335\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=637728, ...}) = 0
+mmap(NULL, 700440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743ea72000
+mprotect(0x743eb0d000, 61440, PROT_NONE) = 0
+mmap(0x743eb1c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9a000) = 0x743eb1c000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libp11-kit.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0000\253\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1355352, ...}) = 0
+mmap(NULL, 1420248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743e917000
+mprotect(0x743ea4e000, 65536, PROT_NONE) = 0
+mmap(0x743ea5e000, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x137000) = 0x743ea5e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libffi.so.8", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\300\32\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=34808, ...}) = 0
+mmap(NULL, 99528, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x743e8fe000
+mprotect(0x743e906000, 61440, PROT_NONE) = 0
+mmap(0x743e915000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x743e915000
+close(3)                                = 0
+mprotect(0x743e915000, 4096, PROT_READ) = 0
+mprotect(0x743ea5e000, 40960, PROT_READ) = 0
+mprotect(0x743eb1c000, 4096, PROT_READ) = 0
+mprotect(0x743eb34000, 4096, PROT_READ) = 0
+mprotect(0x743ebaa000, 20480, PROT_READ) = 0
+munmap(0x743f249000, 62335)             = 0
+rt_sigprocmask(SIG_BLOCK, [HUP USR1 USR2 PIPE ALRM CHLD TSTP URG VTALRM PROF WINCH IO], [], 8) = 0
+futex(0x743ebaf3e0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/run/systemd/userdb/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "etc", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(4)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "run", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(4)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "run", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "host", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(4)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "usr", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "local", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(4)                                = 0
+openat(3, "lib", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(4)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "usr", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "lib", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+close(4)                                = 0
+openat(3, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/userdb/http.group", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/run/userdb/http.group", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/run/host/userdb/http.group", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/usr/local/lib/userdb/http.group", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/usr/lib/userdb/http.group", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/run/systemd/userdb/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "etc", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(4)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "run", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(4)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "run", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "host", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(4)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "usr", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "local", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(4)                                = 0
+openat(3, "lib", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(4)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+openat(3, "usr", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+openat(4, "lib", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+close(4)                                = 0
+openat(3, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (没有那个文件或目录)
+close(3)                                = 0
+getpid()                                = 13225
+gettid()                                = 13225
+getrandom(0x743ebafc28, 16, GRND_NONBLOCK|GRND_INSECURE) = -1 EINVAL (无效的参数)
+getrandom("\x15\x91\xcb\x12\x1d\xec\x70\xb7\x6a\xe2\x7e\x7f\x4a\x4f\xa6\x94", 16, GRND_NONBLOCK) = 16
+futex(0x743ebafc24, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/etc/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/run/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/run/host/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/usr/local/lib/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (没有那个文件或目录)
+openat(AT_FDCWD, "/usr/lib/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (没有那个文件或目录)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+gettid()                                = 13225
+write(2, "2022/02/07 10:31:39 [notice] 132"..., 652022/02/07 10:31:39 [notice] 13225#13225: signal process started
+) = 65
+openat(AT_FDCWD, "/run/nginx.pid", O_RDONLY) = 3
+pread64(3, "22047\n", 22, 0)            = 6
+close(3)                                = 0
+kill(22047, SIGHUP)                     = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
