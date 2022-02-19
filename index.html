@@ -1,10 +1,45 @@
 <html>
- <head> 
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-  <title>Repo</title> 
- </head> 
- <body id="v1"> 
-  <h1 id="v2">当前目录 :/</h1> 
-  <a href="aarch64/index.html" id="v3">aarch64</a>  
- </body>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h1 id="path"></h1>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Last modified</th>
+  </tr>
+        {% for res in site.static_files %}
+          {% if res.path contains 'aarch64/main' %}
+            <tr>
+              <td><a class="post-link" href="{{ res.path | prepend: site.baseurl }}">{{ res.path | remove:'/aarch64/main/' }}</a></td>
+              <td>{{ res.modified_time | date: "%Y %b %-d" }}</td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+</table>
+ghpages fileserver v1.0
+© Karlheinz Niebuhr
+
+</body>
+
+<script>
+document.getElementById('path').innerHTML = "Index of " + window.location.pathname;
+</script>
 </html>
